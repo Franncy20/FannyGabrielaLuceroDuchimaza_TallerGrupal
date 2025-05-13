@@ -5,36 +5,36 @@ Algoritmo contar
 	Mostrar "1-. Ejercicio 1: Calculadora de vuelto"
 	Mostrar "2-. Ejercicio 2: Conversor de kilogramos a libras y viceversa"
 	Mostrar "3-. Ejercicio 3: Calculadora de descuentos"
-	Mostrar "4-. Ejercicio 4: Cálculo del IVA (12%)"
-	Mostrar "5-. Ejercicio 5: Comparación de precios entre dos productos"
+	Mostrar "4-. Ejercicio 4: CÃ¡lculo del IVA (12%)"
+	Mostrar "5-. Ejercicio 5: ComparaciÃ³n de precios entre dos productos"
 	Mostrar "6-. Ejercicio 6: Clasificador de edad del cliente"
-	Mostrar "7-. Ejercicio 7: Identificador de número par o impar"
-	Mostrar "8-. Ejercicio 8: Evaluador de puntuación de servicio"
-	Mostrar "9-. Ejercicio 9: Verificador de múltiplo de 3, 9 o 12"
+	Mostrar "7-. Ejercicio 7: Identificador de nÃºmero par o impar"
+	Mostrar "8-. Ejercicio 8: Evaluador de puntuaciÃ³n de servicio"
+	Mostrar "9-. Ejercicio 9: Verificador de mÃºltiplo de 3, 9 o 12"
 	Mostrar "10-. Ejercicio 10: Calculadora de propina"
 	Mostrar "11-. Ejercicio 11: Clasificador de monto de compra"
-	Mostrar "12-. Ejercicio 12: Determinación de signo de un número"
+	Mostrar "12-. Ejercicio 12: DeterminaciÃ³n de signo de un nÃºmero"
 	Mostrar "13-. Ejercicio 13: Verificador de acceso por edad y dinero"
 	Mostrar "14-. Ejercicio 14: Descuento por edad y monto"
-	Mostrar "15-. Ejercicio 15: Cálculo de cambio exacto con billetes de $10 y $5"
-	Mostrar "16-. Ejercicio 16: Categorizador de día de la semana"
+	Mostrar "15-. Ejercicio 15: CÃ¡lculo de cambio exacto con billetes de $10 y $5"
+	Mostrar "16-. Ejercicio 16: Categorizador de dÃ­a de la semana"
 	Mostrar "17-. Ejercicio 17: Clasificador de producto por precio unitario"
-	Mostrar "18-. Ejercicio 18: Determinador de bisiesto (año)"
+	Mostrar "18-. Ejercicio 18: Determinador de bisiesto (aÃ±o)"
 	Mostrar "19-. Ejercicio 19: Conversor de horas a minutos y segundos"
-	Mostrar "20-. Ejercicio 20: Verificador de triple de un número"
-	Mostrar "21-. Ejercicio 21: Determinar riesgo por síntomas múltiples para el efecto tienes"
-	Mostrar "22-. Ejercicio 22: Clasificación de presión sistólica"
+	Mostrar "20-. Ejercicio 20: Verificador de triple de un nÃºmero"
+	Mostrar "21-. Ejercicio 21: Determinar riesgo por sÃ­ntomas mÃºltiples para el efecto tienes"
+	Mostrar "22-. Ejercicio 22: ClasificaciÃ³n de presiÃ³n sistÃ³lica"
 	Mostrar "23-. Ejercicio 23: Mostrar saludo personalizado"
-	Mostrar "24-. Ejercicio 24: Detectar si el carácter ingresado es una vocal"
-	Mostrar "25-. Ejercicio 25: Detectar si el carácter ingresado es una consonante"
+	Mostrar "24-. Ejercicio 24: Detectar si el carÃ¡cter ingresado es una vocal"
+	Mostrar "25-. Ejercicio 25: Detectar si el carÃ¡cter ingresado es una consonante"
 	Mostrar "26-. Ejercicio 26: Comparar si dos nombres ingresados son iguales"
-	Mostrar "27-. Ejercicio 27: Verificar si una letra es mayúscula o minúscula"
+	Mostrar "27-. Ejercicio 27: Verificar si una letra es mayÃºscula o minÃºscula"
 	Mostrar "28-. Ejercicio 28: Mostrar nombre completo del cliente"
 	Mostrar "29-. Ejercicio 29: Verificar si una palabra es corta o larga"
-	Mostrar "30-. Ejercicio 30: Contar los caracteres y convertir a mayúsculas cualquier frase"
+	Mostrar "30-. Ejercicio 30: Contar los caracteres y convertir a mayÃºsculas cualquier frase"
+	Mostrar "30-. Ejercicio 31: Algoritmo que calcule el precio final del producto."
 	
-	
-	Escribir "Ingresa la función que deseas"
+	Escribir "Ingresa la funciÃ³n que deseas"
 	Leer menu
 	Si menu = 1 Entonces
 		uno()
@@ -126,6 +126,9 @@ Algoritmo contar
 	Si menu = 30 Entonces
 		treinta()
 	FinSi
+        Si menu = 31 Entonces
+		treintiuno()
+	FinSi
 FinAlgoritmo
 Funcion uno
 	//	Pedir costo y dinero recibido. Calcular y mostrar el vuelto o advertir si no alcanza. 
@@ -181,7 +184,7 @@ Funcion dos
 FinFuncion
 
 Funcion tres
-	//	Aplicar 0%, 5% o 10% de descuento según el monto de compra.
+	//	Aplicar 0%, 5% o 10% de descuento segÃºn el monto de compra.
 //	entrada
 	Definir Montodecompra Como Real
 	Definir Precio_0 Como Real
@@ -244,7 +247,7 @@ Funcion cinco
 FinFuncion
 
 Funcion seis
-	//Pedir edad Indicar si es niño (0-12), joven (13-17), adulto (18-64), adulto mayor (65+)
+	//Pedir edad Indicar si es niÃ±o (0-12), joven (13-17), adulto (18-64), adulto mayor (65+)
 	//entrada
 	Definir edad Como Real
 	//inicializamos
@@ -254,7 +257,7 @@ Funcion seis
 	Leer edad
 //	condiciones
 	si edad <= 12 Entonces
-		Escribir "es un niño"
+		Escribir "es un niÃ±o"
 	SiNo 
 		si edad <= 17 Entonces
 			Escribir "es un joven"
@@ -276,7 +279,7 @@ Funcion siete
 	//Definimos las variables como enteros
 	Definir nu1, residuio Como Entero
 	//pedimos que ingrese el numero"
-	Escribir "Ingresa el número para verificar si es multiplo de 10 y/o es impar o par"
+	Escribir "Ingresa el nÃºmero para verificar si es multiplo de 10 y/o es impar o par"
 	Leer nu1 //leemos el numero
 	
 	Si nu1 MOD 2 = 0 // comprobamos si es par o impar
@@ -286,20 +289,20 @@ Funcion siete
 	FinSi
 	
 	residuio = nu1 - (Trunc(nu1/10) * 10)
-	//residuo = número - (Trunc(número / divisor) * divisor)
-	//número: es el valor que quieres analizar.
-	//divisor: es el número con el que estás dividiendo 	
-	//Trunc(x): toma la parte entera de la división, eliminando los decimales
+	//residuo = nÃºmero - (Trunc(nÃºmero / divisor) * divisor)
+	//nÃºmero: es el valor que quieres analizar.
+	//divisor: es el nÃºmero con el que estÃ¡s dividiendo 	
+	//Trunc(x): toma la parte entera de la divisiÃ³n, eliminando los decimales
 	Si residuio = 0 Entonces // comprobamos si es multiplo con una formula, sin mod
 		Escribir "El numero ",nu1, "es multiplo de 10"
 	SiNo
-		Escribir "El número ",nu1, " no es multiplo de 10"
+		Escribir "El nÃºmero ",nu1, " no es multiplo de 10"
 	FinSi
 FinFuncion
 
 Funcion ocho
 	Definir estrellas Como Entero
-	Escribir "¿Cual fue tu experiencia) (1 = Malo) - (2-4 = Regular) - (5 - 7 = Bueno) - (8 - 10 = Excelente)"
+	Escribir "Â¿Cual fue tu experiencia) (1 = Malo) - (2-4 = Regular) - (5 - 7 = Bueno) - (8 - 10 = Excelente)"
 	Leer estrellas
 	
 	Si estrellas = 1 Entonces
@@ -307,15 +310,15 @@ Funcion ocho
 	FinSi
 	
 	Si estrellas > 1 Y estrellas < 4 
-		Escribir "Gracias por tu opinión: regular, estrellas : ",estrellas
+		Escribir "Gracias por tu opiniÃ³n: regular, estrellas : ",estrellas
 	FinSi
 	
 	Si estrellas > 4 Y estrellas < 7 
-		Escribir "Gracias por tu opinión: Bueno, estrellas : ",estrellas
+		Escribir "Gracias por tu opiniÃ³n: Bueno, estrellas : ",estrellas
 	FinSi
 	
 	Si estrellas > 7 Y estrellas < 11
-		Escribir "Gracias por tu opinión: Excelente, estrellas : ",estrellas
+		Escribir "Gracias por tu opiniÃ³n: Excelente, estrellas : ",estrellas
 	FinSi
 FinFuncion
 
@@ -408,7 +411,7 @@ Funcion trece
 	Leer dinero
 	// VERIFICAR SI TIENE LA EDAD Y LA CANTIDAD DE DINERO PARA INGRESAR
 	Si edad >= 18 Y dinero >= 1 Entonces
-		Escribir "¡Bienvenido a la tienda"
+		Escribir "Â¡Bienvenido a la tienda"
 	SiNo
 		Escribir " Lo sentimos no puede ingresar a la tienda "
 	Fin Si
@@ -430,7 +433,7 @@ Funcion catorce
 	Leer monto
 	//proceso
 	//descuento especial
-	//cliente mayor a 60 años
+	//cliente mayor a 60 aÃ±os
 	//compra mas de $50
 	//si no lo es aplica iva 15% con descuento del %5
 	Si edad >= 60  Y monto > 50 Entonces
@@ -487,7 +490,7 @@ Funcion diesiceis
 	Escribir "Ingresar un numero del 1 al 7"
 	Leer dia
 	Si dia < 1 O dia > 7 Entonces
-        Escribir "Número inválido. Debe ser entre 1 y 7."
+        Escribir "NÃºmero invÃ¡lido. Debe ser entre 1 y 7."
     Sino
         Segun dia Hacer
             1:
@@ -495,13 +498,13 @@ Funcion diesiceis
             2:
                 Escribir "Martes"
             3:
-                Escribir "Miércoles"
+                Escribir "MiÃ©rcoles"
             4:
                 Escribir "Jueves"
             5:
                 Escribir "Viernes"
             6:
-                Escribir "Sábado"
+                Escribir "SÃ¡bado"
             7:
                 Escribir "Domingo"
         FinSegun
@@ -527,12 +530,12 @@ Funcion diesiciete
 FinFuncion
 
 Funcion diesiocho
-	Definir año como entero 
-	Escribir " ingrese un año para saber si es bisiesto "; leer año
-	si (año  MOD 4 = 0 Y año MOD 100 <> 0 ) O (año MOD 400 = 0) Entonces
-		Escribir " El año es bisiesto "
+	Definir aÃ±o como entero 
+	Escribir " ingrese un aÃ±o para saber si es bisiesto "; leer aÃ±o
+	si (aÃ±o  MOD 4 = 0 Y aÃ±o MOD 100 <> 0 ) O (aÃ±o MOD 400 = 0) Entonces
+		Escribir " El aÃ±o es bisiesto "
 	sino 
-		Escribir " El año no es bisiesto "
+		Escribir " El aÃ±o no es bisiesto "
 	FinSi
 	
 FinFuncion
@@ -559,13 +562,13 @@ FinFuncion
 
 Funcion veintiuno
 	Definir fiebre, dificultad, pecho Como caracter 
-	Escribir "¿Tiene fiebre? (SI/NO):"
+	Escribir "Â¿Tiene fiebre? (SI/NO):"
 	Leer fiebre
 	
-	Escribir "¿Tiene dificultad para respirar? (SI/NO):"
+	Escribir "Â¿Tiene dificultad para respirar? (SI/NO):"
 	Leer dificultad
 	
-	Escribir "¿Tiene dolor en el pecho? (SI/NO):"
+	Escribir "Â¿Tiene dolor en el pecho? (SI/NO):"
 	Leer pecho
 	
 	Si fiebre = "SI" Y dificultad = "SI" Y pecho = "SI" Entonces
@@ -576,25 +579,25 @@ Funcion veintiuno
 FinFuncion
 
 Funcion veintidos
-	Mostrar "22-. Ejercicio 22: Clasificación de presión sistólica"
+	Mostrar "22-. Ejercicio 22: ClasificaciÃ³n de presiÃ³n sistÃ³lica"
 	
 	Definir presion Como Real
-	Escribir "Ingresa la presión sistólica actual"
+	Escribir "Ingresa la presiÃ³n sistÃ³lica actual"
 	Leer presion
 	
 	Si presion < 90 O presion > 500 Entonces
 		Escribir "Ingresa un valor correcto"
 	SiNo
 		Si presion < 90 Entonces
-			Escribir "La presión es baja: ", presion
+			Escribir "La presiÃ³n es baja: ", presion
 		SiNo
 			Si presion >= 90 Y presion <= 120 Entonces
-				Escribir "La presión es normal: ", presion
+				Escribir "La presiÃ³n es normal: ", presion
 			SiNo
 				Si presion >= 121 Y presion <= 139 Entonces
-					Escribir "La presión está en Prehipertensión: ", presion
+					Escribir "La presiÃ³n estÃ¡ en PrehipertensiÃ³n: ", presion
 				SiNo
-					Escribir "Tienes Hipertensión: ", presion
+					Escribir "Tienes HipertensiÃ³n: ", presion
 				FinSi
 			FinSi
 		FinSi
@@ -612,7 +615,7 @@ Funcion veintitres
 	//salida
 	//mostramos el saludo
 	Escribir "------------------"
-	Escribir "¡Hola, ",nom "!"
+	Escribir "Â¡Hola, ",nom "!"
 FinFuncion
 
 Funcion veinticuatro
@@ -622,11 +625,11 @@ Funcion veinticuatro
 	//solicitamos que el usuario ingrese una letra
 	Escribir "Ingrese una letra:"
 	Leer letra
-	//convertimos a minúscula para hacer la comparación más simple
+	//convertimos a minÃºscula para hacer la comparaciÃ³n mÃ¡s simple
 	letra = Minusculas(letra)
 	Escribir "----------------------------"
 	//proceso y salida
-	//verificamos si el carácter es una vocal y mostramos el resultado
+	//verificamos si el carÃ¡cter es una vocal y mostramos el resultado
 	Si letra = "a" O letra = "e" O letra = "i" O letra = "o" O letra = "u" Entonces
 		Escribir "El caracter es una vocal."
 	SiNo
@@ -642,11 +645,11 @@ Funcion veinticinco
 	//solicitamos que el usuario ingrese una letra
 	Escribir "Ingrese una letra:"
 	Leer letra
-	//convertimos a minúscula para hacer la comparación más simple
+	//convertimos a minÃºscula para hacer la comparaciÃ³n mÃ¡s simple
 	letra = Minusculas(letra)
 	//Salida
 	Escribir "-------------------------------"
-	//verificamos si el carácter es una consonante y mostramos el resultado
+	//verificamos si el carÃ¡cter es una consonante y mostramos el resultado
 	Si letra <> "a" Y letra <> "e" Y letra <> "i" Y letra <> "o" Y letra <> "u" Entonces
 		Escribir "El caracter es una consonante."
 	SiNo
@@ -740,7 +743,29 @@ Funcion treinta
 	Escribir "La cantidad de palabra es de ", Longitud(palabra)
 	Escribir "Tu frase se cambio a mayusculas ", palabra
 FinFuncion
-
+Funcion treintiuno
+//	Algoritmo que calcule el precio final del producto.
+//	entrada
+	Definir precioproducto,preciofinal,antiguedad Como Real
+//	inicializamos
+	precioproducto=0;antiguedad=0
+//	Proceso 
+	Escribir "Ingrese el precio del producto:"
+	Leer precioproducto
+        Escribir "Ingresar la antiguedad del modelo:"
+        Leer antiguedad
+//	calculamos
+        Si antiguedad > 12 Entonces
+	preciofinal= producto * 0.85
+	Escribir "Recibe un descuento del 15%:"
+	Escribir preciofinal
+        Sino 
+        Escribir "No recibe descuento"
+        Escribir precioproducto
+//	salida
+	Escribir "El precio final es:"
+	Escribir preciofinal
+FinFuncion
 
 
 
