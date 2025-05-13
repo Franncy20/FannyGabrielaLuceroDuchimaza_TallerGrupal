@@ -32,7 +32,7 @@ Algoritmo contar
 	Mostrar "28-. Ejercicio 28: Mostrar nombre completo del cliente"
 	Mostrar "29-. Ejercicio 29: Verificar si una palabra es corta o larga"
 	Mostrar "30-. Ejercicio 30: Contar los caracteres y convertir a mayúsculas cualquier frase"
-	Mostrar "30-. Ejercicio 31: Algoritmo que calcule el precio final del producto."
+	Mostrar "31-. Ejercicio 31: Algoritmo que calcule el precio final del producto."
 	
 	Escribir "Ingresa la función que deseas"
 	Leer menu
