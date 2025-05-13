@@ -744,27 +744,52 @@ Funcion treinta
 	Escribir "Tu frase se cambio a mayusculas ", palabra
 FinFuncion
 Funcion treintiuno
-//	Algoritmo que calcule el precio final del producto.
-//	entrada
-	Definir precioproducto,preciofinal,antiguedad Como Real
-//	inicializamos
-	precioproducto=0;antiguedad=0
-//	Proceso 
+	//Algoritmo que calcule el precio final del producto.
+	//entrada
+        //definimos las variables como reales
+	Definir precioproducto,preciofinal5,antiguedad,preciofinal15,meses Como Real
+	//iniciamos
+	precioproducto=0;antiguedad=0;meses=0
+	//proceso 
 	Escribir "Ingrese el precio del producto:"
 	Leer precioproducto
         Escribir "Ingresar la antiguedad del modelo:"
         Leer antiguedad
-//	calculamos
+        Escribir "Ingrese el numero de meses que adquirira el producto:"
+        Leer meses
+	//calculamos
         Si antiguedad > 12 Entonces
-	preciofinal= producto * 0.85
-	Escribir "Recibe un descuento del 15%:"
-	Escribir preciofinal
-        Sino 
-        Escribir "No recibe descuento"
-        Escribir precioproducto
-//	salida
-	Escribir "El precio final es:"
-	Escribir preciofinal
+                //calculamos el descuento
+                //15%= 1 - (15/100) 
+                //15%= 0.85
+                preciofinal15= producto * 0.85
+		Escribir "Se aplica un descuento del 15%:"
+                Escribir preciofinal15
+	SiNo
+                //no se aplica el descuento
+		Escribir precioproducto
+	FinSi
+        Si meses > 24 Entonces
+		Escribir "Cada mes de garantía cuesta $8"
+	SiNo
+                Escribir "Cada mes de garantía cuesta $12"
+	FinSi
+        Si antiguedad <= 12 Entonces
+                //calculamos el descuento
+                //5%= 1 - (15/100) 
+                //5%= 0.95
+                preciofinal5= producto * 0.95
+		Escribir "Se aplica un descuento del 5%:"
+                Escribir preciofinal5
+	SiNo
+                //no se aplica el descuento
+		Escribir precioproducto
+	FinSi
+        Si meses > 24 Entonces
+		Escribir "Cada mes de garantía cuesta $15"
+	SiNo
+                Escribir "Cada mes de garantía cuesta $20"
+	FinSi
 FinFuncion
 
 
